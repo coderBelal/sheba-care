@@ -65,7 +65,7 @@ const Navbar = () => {
         <Link to='/find-doctor' > <li className="hover:text-teal-700 cursor-pointer">Find A Doctor</li></Link>
           <Link to={"/about"}><li className="hover:text-teal-700 cursor-pointer">About Us</li></Link>
             <li>
-               <Link to='/create-account'  >  <div className="hidden md:block bg-teal-700 text-white px-4 py-2 rounded-lg hover:bg-teal-800 transition duration-200">
+                         <Link to='/create-account'  >  <div className=" md:block bg-teal-700 text-white px-4 py-2 rounded-lg hover:bg-teal-800 transition duration-200">
           <button className="text-sm">Create An Account</button>
         </div></Link>
             </li>
