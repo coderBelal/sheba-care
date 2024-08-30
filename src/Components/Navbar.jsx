@@ -59,15 +59,15 @@ const Navbar = () => {
       {isMenuOpen && (
         <nav className="md:hidden bg-white shadow-lg rounded-lg mx-4 mt-2">
           <ul className="flex flex-col items-start p-4 gap-3">
-            <li className="hover:text-teal-700 cursor-pointer">Home</li>
-            <li className="hover:text-teal-700 cursor-pointer">Hospital</li>
-            <li className="hover:text-teal-700 cursor-pointer">Health Blogs</li>
-            <li className="hover:text-teal-700 cursor-pointer">Find A Doctor</li>
-            <li className="hover:text-teal-700 cursor-pointer">About Us</li>
+               <Link to={"/"} >       <li className="hover:text-teal-700 cursor-pointer">Home</li> </Link>
+       <Link  to={"/hospital"} >            <li className="hover:text-teal-700 cursor-pointer">Hospital</li></Link>
+         <Link to={"/healthblog"} > <li className="hover:text-teal-700 cursor-pointer">Health Blogs</li></Link> 
+        <Link to='/find-doctor' > <li className="hover:text-teal-700 cursor-pointer">Find A Doctor</li></Link>
+          <Link to={"/about"}><li className="hover:text-teal-700 cursor-pointer">About Us</li></Link>
             <li>
-              <button className="bg-teal-700 text-white px-4 py-2 rounded-lg hover:bg-teal-800 transition duration-200 w-full text-left">
-                Create An Account
-              </button>
+               <Link to='/create-account'  >  <div className="hidden md:block bg-teal-700 text-white px-4 py-2 rounded-lg hover:bg-teal-800 transition duration-200">
+          <button className="text-sm">Create An Account</button>
+        </div></Link>
             </li>
           </ul>
         </nav>
